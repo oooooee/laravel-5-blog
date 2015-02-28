@@ -18,6 +18,7 @@ class CreateArticleTable extends Migration {
             $table->integer('sort_id');
             $table->text('content'); // 文章的内容
             $table->integer('comments_count'); // 评论数
+            $table->text('tag'); // 标签
 			$table->timestamps();
 		});
 	}
