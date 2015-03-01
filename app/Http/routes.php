@@ -32,5 +32,8 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
+// 文章
+Route::resource('posts', 'PostsController');
+
 Route::resource('projects', 'ProjectsController');
 Route::resource('projects.tasks', 'TasksController');
