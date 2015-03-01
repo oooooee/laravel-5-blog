@@ -1,6 +1,7 @@
 <?php
 
 /*
+ *
 |--------------------------------------------------------------------------
 | Application Routes
 |--------------------------------------------------------------------------
@@ -10,6 +11,11 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+
+Route::get('/db', function(){
+    return DB::table('projects')->get();
+});
+
 
 Route::get('/', 'WelcomeController@index');
 
