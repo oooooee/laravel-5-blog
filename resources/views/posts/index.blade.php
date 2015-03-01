@@ -2,14 +2,14 @@
 
 @section('header')
     @include('common.nav')
-    <header class="intro-header" style="background-image: url('{{asset('assets/img/home-bg.jpg')}}')">
+    <header class="intro-header" style="background-image: url('{{asset('/assets/img/home-bg.jpg')}}')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>Clean Blog</h1>
+                        <h1>Coke Vincent</h1>
                         <hr class="small">
-                        <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+                        <span class="subheading">一盏灯、一个随身听、一本书</span>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                                 {{$post->content}}
                             </h3>
                         </a>
-                        <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
+                        <p class="post-meta">Posted by <a href="#">Vincent</a> on {{substr($post->created_at, 0, 10)}}</p>
                     </div>
 
                     <hr>

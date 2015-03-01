@@ -17,7 +17,7 @@ Route::get('/db', function(){
 });
 
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', 'PostsController@index');
 
 Route::get('/test', function(){
     return View::make('greeting')->with(['name'=>'wangronghui']);

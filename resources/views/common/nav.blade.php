@@ -16,7 +16,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="index.html">首页</a>
+                    <a href="/">首页</a>
                 </li>
                 <li>
                     <a href="/blog/about">关于</a>

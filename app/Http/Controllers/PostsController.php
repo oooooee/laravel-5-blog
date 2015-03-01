@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
+use Symfony\Component\Security\Core\Authorization\Voter\VoterInterface;
 
 class PostsController extends Controller {
 
@@ -49,8 +50,9 @@ class PostsController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
-		var_dump($id);
+
+		return View::make('posts.post', ['a'=>'aaa']);
+
 	}
 
 	/**
