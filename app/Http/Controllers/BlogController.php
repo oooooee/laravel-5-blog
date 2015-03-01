@@ -2,23 +2,22 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
-class PostsController extends Controller {
+class BlogController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function about()
 	{
-		$list = DB::table('posts')->paginate(5);
 
-		return View::make('posts.index', ['posts'=>$list]);
+		return View::make('blog.about');
+
 	}
 
 	/**
@@ -50,7 +49,6 @@ class PostsController extends Controller {
 	public function show($id)
 	{
 		//
-		var_dump($id);
 	}
 
 	/**
